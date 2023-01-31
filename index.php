@@ -90,7 +90,7 @@
                 <li><a href="produto1.php"><img src="images/energia-solar1.png" alt=""></a></li>
                 <li><a href="produto2.php"><img src="images/inverter.png" alt=""></a></li>
                 <li><a href="produto3.php"><img src="images/inverter2.png" alt=""></a></li>
-                <li><a href="produto4.php"><img src="images/multi-slipt.png" alt=""></a></li>
+                <li><a href="produto4.php"><img src="images/multi-split.png" alt=""></a></li>
                 <li><a href="produto5.php"><img src="images/multi-split2.png" alt=""></a></li>
             </ul>
 
@@ -98,24 +98,24 @@
                 <li><a href="produto1.php"><img src="images/energia-solar1.png" alt=""></a></li>
                 <li><a href="produto2.php"><img src="images/inverter.png" alt=""></a></li>
                 <li><a href="produto3.php"><img src="images/inverter2.png" alt=""></a></li>
-                <li><a href="produto4.php"><img src="images/multi-slipt.png" alt=""></a></li>
+                <li><a href="produto4.php"><img src="images/multi-split.png" alt=""></a></li>
                 <li><a href="produto5.php"><img src="images/multi-split2.png" alt=""></a></li>
             </ul>
 
             <ul ng-show="MuiltS">
-                <li><a href="produto1.php"><img src="images/energia-solar1.png" alt=""></a></li>
-                <li><a href="produto2.php"><img src="images/inverter.png" alt=""></a></li>
-                <li><a href="produto3.php"><img src="images/inverter2.png" alt=""></a></li>
-                <li><a href="produto4.php"><img src="images/multi-slipt.png" alt=""></a></li>
-                <li><a href="produto5.php"><img src="images/multi-split2.png" alt=""></a></li>
+                <li><a href="produto1.php"><img src="images/multi-split.png" alt=""></a></li>
+                <li><a href="produto2.php"><img src="images/multi-split2.png" alt=""></a></li>
+                <li><a href="produto3.php"><img src="images/multi-split3.png" alt=""></a></li>
+                <li><a href="produto4.php"><img src="images/multi-split4.png" alt=""></a></li>
+                <li><a href="produto5.php"><img src="images/multi-split.png" alt=""></a></li>
             </ul>
 
             <ul ng-show="Solar">
-                <li><a href="produto1.php"><img src="images/energia-solar1.png" alt=""></a></li>
-                <li><a href="produto2.php"><img src="images/inverter.png" alt=""></a></li>
-                <li><a href="produto3.php"><img src="images/inverter2.png" alt=""></a></li>
-                <li><a href="produto4.php"><img src="images/multi-slipt.png" alt=""></a></li>
-                <li><a href="produto5.php"><img src="images/multi-split2.png" alt=""></a></li>
+                <li><a href="produto1.php"><img src="images/solar.png" alt=""></a></li>
+                <li><a href="produto2.php"><img src="images/solar2.png" alt=""></a></li>
+                <li><a href="produto3.php"><img src="images/solar3.png" alt=""></a></li>
+                <li><a href="produto4.php"><img src="images/solar4.png" alt=""></a></li>
+                <li><a href="produto5.php"><img src="images/solar5.png" alt=""></a></li>
             </ul>
         </div>
     </section>
