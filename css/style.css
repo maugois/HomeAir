@@ -6,19 +6,25 @@
 }
 
 /* ########################### COMEÇO GERAL ########################### */
+.area-title-n2 {
+    font-size: 2.2em;
+    text-align: center;
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+}
 
+.area-title-n2 img {
+    width: 200px;
+}
 /* ########################### FIM GERAL ########################### */
 
 
 
 /* ########################### COMEÇO HEADER ########################### */
 /* Começo logo */
-.header-top {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
 #area-cabecalho {
     display: flex;
     width: 100%;
@@ -62,6 +68,7 @@
 }
 
 #menu nav ul li a {
+    font-size: 1.2em;
     text-decoration: none;
     color: #000;
 }
@@ -95,7 +102,67 @@
 
 
 /* ########################### COMEÇO PRODUTOS ########################### */
+#area-produtos {
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#filter-arc {
+    display: flex;
+    gap: 20px;
+}
+
+.filter-element {
+    font-size: 1em;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: 0.2s ease linear;
+}
+
+.filter-element:hover {
+    color: #666464;
+}
+
+.filter-element::after {
+    content: " ";
+    width: 0;
+    height: 2px;
+    background-color: #a0a0a0;
+    margin: 3px auto auto;
+    display: block;
+    transition: 0.3s;
+}
+
+.filter-element:hover::after {
+    width: 90%;
+}
+
+#arc {
+    margin-top: 20px;
+}
+
+#arc ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 100px;
+}
+
+#arc ul li {
+    transition: all 0.2s ease;
+
+}
+
+#arc ul li:hover {
+    transform: scale(1.05);
+}
+
+#arc ul li a img {
+    width: 250px;
+}
 /* ########################### FIM PRODUTOS ########################### */
 
 

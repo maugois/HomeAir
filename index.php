@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <title></title>
 </head>
-<body ng-app="meuSite">
+<body ng-app="">
     <?php include 'cabecalho.html'?>
 
     <section id="area-inicial">
@@ -29,7 +29,7 @@
         <div>
             <img src="" alt="">
             
-            <h3 class="area-title-n3"></h3>
+            <h3 class="area-title-n3">Visão</h3>
 
             <p></p>
         </div>
@@ -37,7 +37,7 @@
         <div>
             <img src="" alt="">
 
-            <h3 class="area-title-n3"></h3>
+            <h3 class="area-title-n3">Visão</h3>
 
             <p></p>
         </div>
@@ -45,7 +45,7 @@
         <div>
             <img src="" alt="">
 
-            <h3 class="area-title-n3"></h3>
+            <h3 class="area-title-n3">Valores</h3>
 
             <p></p>
         </div>
@@ -53,14 +53,14 @@
 
 
     <section id="area-servicos">
-        <h2 class="area-title-n2"></h2>
+        <h2 class="area-title-n2">Serviços<img src="images/linha.svg" alt=""></h2>
 
     </section>
 
 
     <section id="area-sobre">
         <article>
-            <h2 class="area-title-n2"></h2>
+            <h2 class="area-title-n2">Sobre nós<img src="images/linha.svg" alt=""></h2>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                <br> Ipsum iste corporis aperiam voluptates impedit ut amet, dolorem 
@@ -75,27 +75,50 @@
     </section>
 
 
-    <section id="area-produtos">
-        <h2 class="area-title-n2"></h2>
+    <section id="area-produtos" ng-controller="filtro">
+        <h2 class="area-title-n2">Produtos<img src="images/linha.svg" alt=""></h2>
         
-        <span>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-        </span>
+        <div id="filter-arc">
+            <button ng-click="todosAr()" class="filter-element">Ar condicionado</button>
+            <button ng-click="inverterAr()" class="filter-element">Ar condicionado Inverter</button>
+            <button ng-click="multiSplit()" class="filter-element">Multi Split</button>
+            <button ng-click="energiaSolar()" class="filter-element">Energia Solar</button>
+        </div>
 
-        <div>
-            <ul>
-                <li><a href="produto1.php"></a></li>
-                <li><a href="produto2.php"></a></li>
-                <li><a href="produto3.php"></a></li>
-                <li><a href="produto4.php"></a></li>
-                <li><a href="produto5.php"></a></li>
+        <div id="arc">
+            <ul ng-show="arCond">
+                <li><a href="produto1.php"><img src="images/energia-solar1.png" alt=""></a></li>
+                <li><a href="produto2.php"><img src="images/inverter.png" alt=""></a></li>
+                <li><a href="produto3.php"><img src="images/inverter2.png" alt=""></a></li>
+                <li><a href="produto4.php"><img src="images/multi-slipt.png" alt=""></a></li>
+                <li><a href="produto5.php"><img src="images/multi-split2.png" alt=""></a></li>
+            </ul>
+
+            <ul ng-show="Invert">
+                <li><a href="produto1.php"><img src="images/energia-solar1.png" alt=""></a></li>
+                <li><a href="produto2.php"><img src="images/inverter.png" alt=""></a></li>
+                <li><a href="produto3.php"><img src="images/inverter2.png" alt=""></a></li>
+                <li><a href="produto4.php"><img src="images/multi-slipt.png" alt=""></a></li>
+                <li><a href="produto5.php"><img src="images/multi-split2.png" alt=""></a></li>
+            </ul>
+
+            <ul ng-show="MuiltS">
+                <li><a href="produto1.php"><img src="images/energia-solar1.png" alt=""></a></li>
+                <li><a href="produto2.php"><img src="images/inverter.png" alt=""></a></li>
+                <li><a href="produto3.php"><img src="images/inverter2.png" alt=""></a></li>
+                <li><a href="produto4.php"><img src="images/multi-slipt.png" alt=""></a></li>
+                <li><a href="produto5.php"><img src="images/multi-split2.png" alt=""></a></li>
+            </ul>
+
+            <ul ng-show="Solar">
+                <li><a href="produto1.php"><img src="images/energia-solar1.png" alt=""></a></li>
+                <li><a href="produto2.php"><img src="images/inverter.png" alt=""></a></li>
+                <li><a href="produto3.php"><img src="images/inverter2.png" alt=""></a></li>
+                <li><a href="produto4.php"><img src="images/multi-slipt.png" alt=""></a></li>
+                <li><a href="produto5.php"><img src="images/multi-split2.png" alt=""></a></li>
             </ul>
         </div>
     </section>
-
     <?php include 'rodape.html'?>
 </body>
 <script src="js/script.js"></script>
