@@ -13,15 +13,15 @@
     <?php include 'cabecalho.html'?>
 
     <section id="area-inicial">
-        <div>
+        <div id="inicial-img-solar">
             <img src="images/energia_solar.png" alt="Imagem energia solar">
         </div>
 
-        <div>
+        <div id="inicial-text">
             <p>Lorem ipsum dolor sit amet,
                <br>consectetur adipiscing elit.
+               <img src="images/linha.svg" alt="Imagem de uma linha">
             </p>
-            <img src="images/linha.svg" alt="Imagem de uma linha">
         </div>
     </section>
 
@@ -75,18 +75,18 @@
     </section>
 
 
-    <section id="area-produtos" ng-controller="filtro">
+    <section id="area-produtos">
         <h2 class="area-title-n2">Produtos<img src="images/linha.svg" alt=""></h2>
         
         <div id="filter-arc">
-            <button ng-click="todosAr()" class="filter-element">Ar condicionado</button>
-            <button ng-click="inverterAr()" class="filter-element">Ar condicionado Inverter</button>
-            <button ng-click="multiSplit()" class="filter-element">Multi Split</button>
-            <button ng-click="energiaSolar()" class="filter-element">Energia Solar</button>
+            <button class="filter-element">Ar condicionado</button>
+            <button class="filter-element">Ar condicionado Inverter</button>
+            <button class="filter-element">Multi Split</button>
+            <button class="filter-element">Energia Solar</button>
         </div>
 
         <div id="arc">
-            <ul ng-show="arCond">
+            <ul>
                 <li><a href="produto1.php"><img src="images/energia-solar1.png" alt=""></a></li>
                 <li><a href="produto2.php"><img src="images/inverter.png" alt=""></a></li>
                 <li><a href="produto3.php"><img src="images/inverter2.png" alt=""></a></li>
@@ -94,7 +94,7 @@
                 <li><a href="produto5.php"><img src="images/multi-split2.png" alt=""></a></li>
             </ul>
 
-            <ul ng-show="Invert">
+            <ul>
                 <li><a href="produto1.php"><img src="images/energia-solar1.png" alt=""></a></li>
                 <li><a href="produto2.php"><img src="images/inverter.png" alt=""></a></li>
                 <li><a href="produto3.php"><img src="images/inverter2.png" alt=""></a></li>
@@ -102,15 +102,15 @@
                 <li><a href="produto5.php"><img src="images/multi-split2.png" alt=""></a></li>
             </ul>
 
-            <ul ng-show="MuiltS">
+            <ul>
                 <li><a href="produto1.php"><img src="images/multi-split.png" alt=""></a></li>
                 <li><a href="produto2.php"><img src="images/multi-split2.png" alt=""></a></li>
                 <li><a href="produto3.php"><img src="images/multi-split3.png" alt=""></a></li>
                 <li><a href="produto4.php"><img src="images/multi-split4.png" alt=""></a></li>
-                <li><a href="produto5.php"><img src="images/multi-split.png" alt=""></a></li>
+                <li><a href="produto5.php"><img src="" alt=""></a></li>
             </ul>
 
-            <ul ng-show="Solar">
+            <ul>
                 <li><a href="produto1.php"><img src="images/solar.png" alt=""></a></li>
                 <li><a href="produto2.php"><img src="images/solar2.png" alt=""></a></li>
                 <li><a href="produto3.php"><img src="images/solar3.png" alt=""></a></li>
