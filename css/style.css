@@ -1,37 +1,58 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: 'titulos';
+    src: url(../font/comfortaa/Comfortaa-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'textos';
+    src: url(../font/creato_display/CreatoDisplay-Regular.otf);
+}
+
+:root {
+    --cor-branca: #fff;
+    --cor-cinza: #f5f5f5;
+    --cor-cinza-escuro: #a0a0a0;
+    --cor-grafite: #666464;
+    --cor-preto: #000;
+    --cor-azul-escuro: #0077ff;
+    --cor-azul: #6aadfa; 
+    --cor-azul-claro: #ccefff;
 }
 
 /* ########################### COMEÇO GERAL ########################### */
 .area-title-n2 {
-    font-size: 2.2em;
+    font-size: 2em;
     text-align: center;
     margin: 40px 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 2px;
+    font-family: 'titulos', sans-serif;
 }
 
 .area-title-n2 img {
-    width: 200px;
+    width: 180px;
+}
+
+p, a, h3 {
+    font-family: 'textos', sans-serif;
 }
 /* ########################### FIM GERAL ########################### */
 
 
 
 /* ########################### COMEÇO HEADER ########################### */
-/* Começo logo */
 #area-cabecalho {
     display: flex;
     width: 100%;
-    height: 70px;
-    background-color: #f5f5f5;
+    height: 60px;
+    background-color: var(--cor-cinza);
 }
 
+/* Começo logo */
 #logo {
     width: 50%;
     display: flex;
@@ -49,14 +70,14 @@
 
 #menu nav ul {
     display: flex;
-    gap: 25px;
+    gap: 35px;
 }
 
 #menu nav ul li::after {
     content: " ";
     width: 0;
     height: 2px;
-    background-color: #a0a0a0;
+    background-color: var(--cor-azul-escuro);
     margin: 3px auto auto;
     display: block;
     transition: 0.3s;
@@ -67,9 +88,9 @@
 }
 
 #menu nav ul li a {
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-decoration: none;
-    color: #000;
+    color: var(--cor-preto);
 }
 /* Fim menu */
 /* ########################### FIM HEADER ########################### */
@@ -78,9 +99,10 @@
 
 /* ########################### COMEÇO INICIO ########################### */
 #area-inicial {
-    background-color: #f5f5f5;
+    background-color: var(--cor-cinza);
     display: flex;
     width: 100%;
+    height: 500px;
 }
 
 #inicial-img-solar {
@@ -91,22 +113,23 @@
 
 #inicial-img-solar img {
     width: 95%;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 #inicial-text {
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 #inicial-text p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.7em;
     gap: 15px;
+    margin-left: 90px;
 }
 
 #inicial-text p img {
@@ -117,7 +140,37 @@
 
 
 /* ########################### COMEÇO MISSÃO ########################### */
+#area-missao {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--cor-azul-escuro);
+    height: 300px;
+}
 
+.itens-missao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.itens-missao img {
+    color: var(--cor-branca);
+}
+
+.itens-missao .area-title-n3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--cor-branca);
+}
+
+.itens-missao p {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--cor-branca);
+
+}
 /* ########################### FIM MISSÃO ########################### */
 
 
@@ -129,7 +182,9 @@
 
 
 /* ########################### COMEÇO SOBRE NÓS ########################### */
-
+#area-sobre {
+    background-color: var(--cor-cinza);
+}
 /* ########################### FIM SOBRE NÓS ########################### */
 
 
@@ -156,14 +211,14 @@
 }
 
 .filter-element:hover {
-    color: #666464;
+    color: var(--cor-grafite);
 }
 
 .filter-element::after {
     content: " ";
     width: 0;
     height: 2px;
-    background-color: #a0a0a0;
+    background-color: var(--cor-azul-escuro);
     margin: 3px auto auto;
     display: block;
     transition: 0.3s;
@@ -186,11 +241,13 @@
 
 #arc ul li {
     transition: all 0.2s ease;
-
 }
 
 #arc ul li:hover {
     transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 11px -1px var(--cor-azul);
+    -moz-box-shadow: 0px 0px 11px -1px var(--cor-azul);
+    box-shadow: 0px 0px 11px -1px var(--cor-azul);
 }
 
 #arc ul li a img {
@@ -201,7 +258,9 @@
 
 
 /* ########################### COMEÇO FOOTER ########################### */
-
+#rodape-area {
+    background-color: var(--cor-azul-claro);
+}
 /* ########################### FIM FOOTER ########################### */
 
 

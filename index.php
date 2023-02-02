@@ -20,34 +20,47 @@
         <div id="inicial-text">
             <p>Lorem ipsum dolor sit amet,
                <br>consectetur adipiscing elit.
-               <img src="images/linha.svg" alt="Imagem de uma linha">
+               <img src="images/linha-azul.svg" alt="Imagem de uma linha">
             </p>
         </div>
     </section>
 
     <section id="area-missao">
-        <div>
-            <img src="" alt="">
+        <div class="itens-missao">
+            <img src="" alt="Visão">
             
             <h3 class="area-title-n3">Visão</h3>
 
-            <p></p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing <br> 
+                elit. Unde facere repellendus ipsa, maxime non dolores <br> 
+                totam! Quas unde dolor quibusdam!
+            </p>
         </div>
 
-        <div>
-            <img src="" alt="">
+        <div class="itens-missao">
+            <img src="" alt="Visão">
 
             <h3 class="area-title-n3">Visão</h3>
 
-            <p></p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing <br> 
+                elit. Iure sit natus aperiam aut, recusandae repudiandae <br>
+                 veritatis voluptas velit fugiat, molestias officia soluta!
+            </p>
         </div>
 
-        <div>
-            <img src="" alt="">
+        <div class="itens-missao">
+            <img src="" alt="Valores">
 
             <h3 class="area-title-n3">Valores</h3>
 
-            <p></p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui <br> 
+                veritatis vitae ad! Et, sit, rem facere praesentium, delectus <br> 
+                dolor asperiores soluta saepe ex quis repellat molestiae. Aspernatur <br>
+                 voluptates earum dignissimos.
+            </p>
         </div>
     </section>
 
@@ -119,6 +132,7 @@
             </ul>
         </div>
     </section>
+
     <?php include 'rodape.html'?>
 </body>
 <script src="js/script.js"></script>
