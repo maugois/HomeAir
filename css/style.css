@@ -102,7 +102,7 @@ p, a, h3 {
     background-color: var(--cor-cinza);
     display: flex;
     width: 100%;
-    height: 500px;
+    height: 515px;
 }
 
 #inicial-img-solar {
@@ -167,16 +167,20 @@ p, a, h3 {
 
 .itens-missao p {
     font-style: italic;
+    font-size: 0.98em;
+    line-height: 20px;
     font-weight: 500;
     color: var(--cor-branca);
-
+    text-align: center;
 }
 /* ########################### FIM MISSÃO ########################### */
 
 
 
 /* ########################### COMEÇO SERVIÇOS ########################### */
-
+#area-servicos {
+    height: 450px;
+}
 /* ########################### FIM SERVIÇOS ########################### */
 
 
@@ -184,6 +188,36 @@ p, a, h3 {
 /* ########################### COMEÇO SOBRE NÓS ########################### */
 #area-sobre {
     background-color: var(--cor-cinza);
+    display: flex;
+    justify-content: space-between;
+    height: 450px;
+}
+
+#text-sobre {
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+    width: 60%;
+}
+
+#text-sobre div {
+    text-align: center;
+}
+
+#text-sobre div p {
+    font-size: 1.1em;
+    line-height: 25px;
+}
+
+#img-sobre {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-sobre img {
+    width: 90%;
 }
 /* ########################### FIM SOBRE NÓS ########################### */
 
@@ -191,7 +225,7 @@ p, a, h3 {
 
 /* ########################### COMEÇO PRODUTOS ########################### */
 #area-produtos {
-    height: 440px;
+    height: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -241,6 +275,7 @@ p, a, h3 {
 
 #arc ul li {
     transition: all 0.2s ease;
+    border-radius: 5px;
 }
 
 #arc ul li:hover {
@@ -251,7 +286,7 @@ p, a, h3 {
 }
 
 #arc ul li a img {
-    width: 250px;
+    width: 170px;
 }
 /* ########################### FIM PRODUTOS ########################### */
 

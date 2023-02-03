@@ -68,22 +68,38 @@
     <section id="area-servicos">
         <h2 class="area-title-n2">Serviços<img src="images/linha.svg" alt=""></h2>
 
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
     </section>
 
 
     <section id="area-sobre">
-        <article>
-            <h2 class="area-title-n2">Sobre nós<img src="images/linha.svg" alt=""></h2>
+        <article id="text-sobre">
+            <div>
+                <h2 class="area-title-n2">Sobre nós<img src="images/linha.svg" alt=""></h2>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               <br> Ipsum iste corporis aperiam voluptates impedit ut amet, dolorem 
-               <br> quo. Fugiat, blanditiis. Corrupti est aspernatur sed reprehenderit 
-               <br> enim maiores laudantium recusandae neque.
-            </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br> Ipsum iste corporis aperiam voluptates impedit ut amet, dolorem 
+                    <br> quo. Fugiat, blanditiis. Corrupti est aspernatur sed reprehenderit 
+                    <br> enim maiores laudantium recusandae neque. Lorem ipsum dolor sit amet 
+                    <br> consectetur adipisicing elit. Aliquid dignissimos nostrum voluptatibus 
+                    <br> consequatur porro non soluta, hic qui, accusamus similique incidunt 
+                    <br> quisquam iste minima, doloremque sequi odit sit officiis cum! Lorem 
+                    <br> ipsum dolor sit amet consectetur adipisicing elit. Officia itaque 
+                    <br> assumenda quaerat facilis accusamus corrupti aspernatur soluta 
+                    <br> molestiae in sit officiis saepe voluptate magnam, aut minima.
+                </p>
+            </div>
         </article>
         
-        <article>
-            <img src="" alt="">
+        <article id="img-sobre">
+            <img src="" alt="Logo grande">
         </article>
     </section>
 
