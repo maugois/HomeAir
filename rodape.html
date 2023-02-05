@@ -1,23 +1,49 @@
 <footer>
     <div id="rodape-area">
-        <div>
+        <div id="imagem-contato">
             <img src="images/ar_condicionado.png" alt="Imagem ar condicionado">
         </div>
 
         <div id="area-contato">
-            <h2 class="area-title-n2"></h2>
+            <h2 class="area-title-n2" id="title-contato">Contato<img src="images/linha.svg" alt=""></h2>
 
-            <div>
+            <div id="endereco-contato">
+                <div id="endereco">
+                    <h3 class="area-title-n3">endereço</h3>
 
+                    <p>
+                        Av. Itaquera, 8266 - Vila Carmosina, 
+                        <br> São Paulo - SP, 08295-000
+                    </p>
+                </div>
+
+
+                <div id="contato">
+                    <h3 class="area-title-n3">entre em contato</h3>
+
+                    <p>
+                        Tel: +55 (11) 9999-9999
+                    </p>
+                </div>
             </div>
 
-            <form name="form">
-                <h3></h3>
+            <form name="form" id="form-contato">
+                <h3 class="area-title-n3">envie-nos uma mensagem</h3>
 
+                <div id="form-itens">
+                    <input class="in-contato" type="text" name="nome" id="nome" placeholder="Nome">
+                    <input class="in-contato" type="email" name="email" id="email" ng-model="text" placeholder="E-mail">
+                    <span ng-show="form.email.$error.email"></span>
+                </div>
 
-                <input type="email" name="email" ng-model="text" placeholder="E-mail">
-                <span ng-show="form.email.$error.email">Digite um email válido</span>
+                <textarea name="mensagem" id="mensagem" rows="1" placeholder="Mensagem"></textarea>
+                <input class="button" type="submit" value="Enviar">
             </form>
+
+            <div id="redes-sociais">
+                <a href=""><img src="images/icone_fb.svg" alt=""></a>
+                <a href=""><img src="images/icone_insta.svg" alt=""></a>
+            </div>
         </div>
     </div>    
 </footer>

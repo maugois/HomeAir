@@ -115,7 +115,7 @@
         </div>
 
         <div id="arc">
-            <ul>
+            <ul style="display: none;">
                 <li><a href="detalhes.php"><img src="images/energia-solar1.png" alt=""></a></li>
                 <li><a href="detalhes.php"><img src="images/inverter.png" alt=""></a></li>
                 <li><a href="detalhes.php"><img src="images/inverter2.png" alt=""></a></li>
@@ -123,7 +123,7 @@
                 <li><a href="detalhes.php"><img src="images/multi-split2.png" alt=""></a></li>
             </ul>
 
-            <ul>
+            <ul style="display: none;">
                 <li><a href="detalhes.php"><img src="images/energia-solar1.png" alt=""></a></li>
                 <li><a href="detalhes.php"><img src="images/inverter.png" alt=""></a></li>
                 <li><a href="detalhes.php"><img src="images/inverter2.png" alt=""></a></li>
@@ -131,7 +131,7 @@
                 <li><a href="detalhes.php"><img src="images/multi-split2.png" alt=""></a></li>
             </ul>
 
-            <ul>
+            <ul style="display: none;">
                 <li><a href="detalhes.php"><img src="images/multi-split.png" alt=""></a></li>
                 <li><a href="detalhes.php"><img src="images/multi-split2.png" alt=""></a></li>
                 <li><a href="detalhes.php"><img src="images/multi-split3.png" alt=""></a></li>

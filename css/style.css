@@ -17,8 +17,9 @@
     --cor-grafite: #666464;
     --cor-preto: #000;
     --cor-azul-escuro: #0077ff;
+    --cor-azul-escuro-opc: #0077ff9c;
     --cor-azul: #6aadfa; 
-    --cor-azul-claro: #ccefff;
+    --cor-azul-claro: #a7e2fd;
 }
 
 /* ########################### COMEÇO GERAL ########################### */
@@ -37,7 +38,7 @@
     width: 180px;
 }
 
-p, a, h3 {
+body p, a, h3 {
     font-family: 'textos', sans-serif;
 }
 /* ########################### FIM GERAL ########################### */
@@ -98,13 +99,16 @@ p, a, h3 {
 
 
 /* ########################### COMEÇO INICIO ########################### */
+/* Começo geral */
 #area-inicial {
     background-color: var(--cor-cinza);
     display: flex;
     width: 100%;
     height: 515px;
 }
+/* Fim geral */
 
+/* Começo imagem energia solar */
 #inicial-img-solar {
     width: 50%;
     display: flex;
@@ -115,7 +119,9 @@ p, a, h3 {
     width: 95%;
     margin: 10px 0;
 }
+/* Fim imagem energia solar */
 
+/* Começo texto */
 #inicial-text {
     width: 50%;
     display: flex;
@@ -135,11 +141,13 @@ p, a, h3 {
 #inicial-text p img {
     width: 200px;
 }
+/* Fim texto */
 /* ########################### FIM INICIO ########################### */
 
 
 
 /* ########################### COMEÇO MISSÃO ########################### */
+/* Começo geral */
 #area-missao {
     display: flex;
     justify-content: space-evenly;
@@ -147,7 +155,9 @@ p, a, h3 {
     background-color: var(--cor-azul-escuro);
     height: 300px;
 }
+/* Fim geral */
 
+/* Começo visões/valores */
 .itens-missao {
     display: flex;
     flex-direction: column;
@@ -173,6 +183,7 @@ p, a, h3 {
     color: var(--cor-branca);
     text-align: center;
 }
+/* Fim visões/valores */
 /* ########################### FIM MISSÃO ########################### */
 
 
@@ -186,13 +197,16 @@ p, a, h3 {
 
 
 /* ########################### COMEÇO SOBRE NÓS ########################### */
+/* Começo geral */
 #area-sobre {
     background-color: var(--cor-cinza);
     display: flex;
     justify-content: space-between;
     height: 450px;
 }
+/* Fim geral */
 
+/* Começo sobre */
 #text-sobre {
     display: flex;
     align-items: flex-start;
@@ -208,7 +222,9 @@ p, a, h3 {
     font-size: 1.1em;
     line-height: 25px;
 }
+/* Fim sobre */
 
+/* Começo imagem */
 #img-sobre {
     width: 40%;
     display: flex;
@@ -219,18 +235,22 @@ p, a, h3 {
 #img-sobre img {
     width: 90%;
 }
+/* Fim imagem */
 /* ########################### FIM SOBRE NÓS ########################### */
 
 
 
 /* ########################### COMEÇO PRODUTOS ########################### */
+/* Começo geral */
 #area-produtos {
     height: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+/* Fim geral */
 
+/* Começo opções filtro */
 #filter-arc {
     display: flex;
     gap: 20px;
@@ -261,7 +281,9 @@ p, a, h3 {
 .filter-element:hover::after {
     width: 90%;
 }
+/* Fim opções filtro */
 
+/* Começo produtos */
 #arc {
     margin-top: 20px;
 }
@@ -288,14 +310,150 @@ p, a, h3 {
 #arc ul li a img {
     width: 170px;
 }
+/* Fim produtos */
 /* ########################### FIM PRODUTOS ########################### */
 
 
 
 /* ########################### COMEÇO FOOTER ########################### */
+/* Começo geral */
 #rodape-area {
     background-color: var(--cor-azul-claro);
+    display: flex;
+    width: 100%;
+    height: 600px;
 }
+
+#title-contato {
+    font-size: 1.5em;
+    margin: 40px 30px 0 0;
+}
+
+#title-contato img {
+    width: 40%;
+}
+
+#imagem-contato {
+    width: 50%;
+    height: 100%;
+}
+
+#imagem-contato img {
+    width: 95%;
+    height: 100%;
+}
+
+#area-contato {
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#area-contato h3 {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+/* Fim geral */
+
+/* Começo endereço */
+#endereco-contato {
+    display: flex;
+    justify-content: start;
+    gap: 70px;
+    margin-bottom: 40px;
+}
+
+#endereco-contato h3 {
+    font-size: 1.2em;
+}
+
+#endereco-contato p {
+    margin-top: 15px;
+    font-size: 0.8em;
+}
+/* Fim endereço */
+
+/* Começo formulário*/
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#form-contato h3 {
+    font-size: 1.2em;
+}
+
+#form-contato #form-itens {
+    display: flex;
+    gap: 15px;
+}
+
+#form-contato #form-itens .in-contato {
+    width: 193px;
+    padding: 5px 2px;
+    outline: none;
+    border: none;
+    border-bottom: var(--cor-azul-escuro-opc) solid 2px;
+    background-color: transparent;
+    font-style: italic;
+}
+
+#form-contato textarea {
+    margin-top: 20px;
+    width: 409px;
+    padding: 5px 2px;
+    outline: none;
+    border: none;
+    border-bottom: var(--cor-azul-escuro-opc) solid 2px;
+    background-color: transparent;
+    font-style: italic;
+}
+
+#form-contato .button {
+    margin: 30px auto 30px 160px;
+    width: 90px;
+    height: 38px;
+    background-color: transparent;
+    border: var(--cor-preto) solid 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.1s ease-in;
+}
+
+#form-contato .button:hover {
+    background-color: var(--cor-azul-escuro);
+    border: var(--cor-azul-escuro) solid 1px;
+    color: var(--cor-branca);
+}
+/* Fim formulário*/
+
+/* Começo redes sociais */
+#redes-sociais {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+#redes-sociais img {
+    width: 30px;
+    border: solid 1px var(--cor-preto);
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.2s ease-in;
+}
+
+#redes-sociais a {
+    transition: 0.2s ease-in;
+}
+
+#redes-sociais a:hover, #redes-sociais img:hover {
+    transform: scale(1.05);
+}
+/* Fim redes sociais */
 /* ########################### FIM FOOTER ########################### */
 
 
