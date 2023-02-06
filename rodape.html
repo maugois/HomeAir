@@ -28,15 +28,20 @@
             </div>
 
             <form name="form" id="form-contato">
-                <h3 class="area-title-n3">envie-nos uma mensagem</h3>
+                <div id="title-contato-form">
+                    <h3 class="area-title-n3">envie-nos uma mensagem</h3>
+                </div>
 
                 <div id="form-itens">
                     <input class="in-contato" type="text" name="nome" id="nome" placeholder="Nome">
                     <input class="in-contato" type="email" name="email" id="email" ng-model="text" placeholder="E-mail">
                     <span ng-show="form.email.$error.email"></span>
                 </div>
+                
+                <div id="form-mensagem">
+                    <textarea name="mensagem" id="mensagem" rows="1" placeholder="Mensagem"></textarea>
+                </div>
 
-                <textarea name="mensagem" id="mensagem" rows="1" placeholder="Mensagem"></textarea>
                 <input class="button" type="submit" value="Enviar">
             </form>
 
