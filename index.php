@@ -68,8 +68,8 @@
     <section id="area-servicos">
         <h2 class="area-title-n2">Serviços<img src="images/linha.svg" alt=""></h2>
 
-        <div>
-            <ul>
+        <div id="itens-servicos">
+            <ul class="lista-servicos">
                 <li><img src="" alt=""></li>
                 <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ipsum error. Nihil tempora tenetur ducimus maiores, quo ea aut iste similique rerum, maxime ad enim reiciendis voluptatum odio numquam sit.</p></li>
                 <li><img src="" alt=""></li>
@@ -78,7 +78,7 @@
                 <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius cupiditate accusamus, laboriosam tempore ipsam magni. Aliquam, amet repellat sed quos, laudantium similique, vitae odio rerum vel iste quod recusandae ducimus!</p></li>
             </ul>
 
-            <ul>
+            <ul class="lista-servicos">
                 <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ad omnis tenetur, provident, ab tempore nisi nihil fuga sequi quos error, libero officia repudiandae nemo molestias dolorem cum eos illo.</p></li>
                 <li><img src="" alt=""></li>
                 <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor autem magni reiciendis maiores labore suscipit sed facere aspernatur rem repellat ipsam, esse, molestiae iure ex atque maxime deserunt blanditiis ratione.</p></li>

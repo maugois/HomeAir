@@ -194,6 +194,17 @@ body p, a, h3 {
 #area-servicos {
     height: 450px;
 }
+
+#itens-servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lista-servicos {
+    display: flex;
+}
 /* ########################### FIM SERVIÇOS ########################### */
 
 
@@ -218,6 +229,7 @@ body p, a, h3 {
 
 #text-sobre div {
     text-align: center;
+    margin-right: 85px;
 }
 
 #text-sobre div p {
@@ -323,11 +335,11 @@ body p, a, h3 {
     background-color: var(--cor-azul-claro);
     display: flex;
     width: 100%;
-    height: 600px;
+    height: 620px;
 }
 
 #title-contato {
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 40px 0 0 0;
 }
 
@@ -368,7 +380,7 @@ body p, a, h3 {
 }
 
 #endereco-contato h3 {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 #endereco-contato p {
@@ -392,7 +404,7 @@ body p, a, h3 {
 }
 
 #form-contato h3 {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 #form-contato #form-itens {
