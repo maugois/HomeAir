@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Icons google -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<!-- Link angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <!-- Link jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <title></title>
 </head>
 <body ng-app="meuSite" ng-controller="meuControle">
@@ -71,21 +75,21 @@
 
         <div id="itens-servicos">
             <ul class="lista-servicos">
-                <li><img src="" alt=""></li>
+                <li><img class="img-l-servicos" src="images/servicos-ar-condicionado-01.jpg" alt=""></li>
                 <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ipsum error. Nihil tempora tenetur ducimus maiores, quo ea aut iste similique rerum, maxime ad enim reiciendis voluptatum odio numquam sit.</p></li>
-                <li><img src="" alt=""></li>
+                <li><img class="img-l-servicos" src="images/servicos-ar-condicionado-01.jpg" alt=""></li>
                 <li><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex sint hic asperiores sequi odit, a consequatur in eaque illum? Illum accusamus nulla, et veniam nemo repellendus fugit voluptate ex. Quo.</p></li>
-                <li><img src="" alt=""></li>
+                <li><img class="img-l-servicos" src="images/servicos-ar-condicionado-01.jpg" alt=""></li>
                 <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius cupiditate accusamus, laboriosam tempore ipsam magni. Aliquam, amet repellat sed quos, laudantium similique, vitae odio rerum vel iste quod recusandae ducimus!</p></li>
             </ul>
 
             <ul class="lista-servicos">
                 <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ad omnis tenetur, provident, ab tempore nisi nihil fuga sequi quos error, libero officia repudiandae nemo molestias dolorem cum eos illo.</p></li>
-                <li><img src="" alt=""></li>
+                <li><img class="img-l-servicos" src="images/servicos-ar-condicionado-01.jpg" alt=""></li>
                 <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor autem magni reiciendis maiores labore suscipit sed facere aspernatur rem repellat ipsam, esse, molestiae iure ex atque maxime deserunt blanditiis ratione.</p></li>
-                <li><img src="" alt=""></li>
+                <li><img class="img-l-servicos" src="images/servicos-ar-condicionado-01.jpg" alt=""></li>
                 <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatum rem repudiandae magnam quos ipsa ab magni nisi? Possimus ad optio, non voluptas nobis doloremque similique reprehenderit aperiam laboriosam doloribus.</p></li>
-                <li><img src="" alt=""></li>
+                <li><img class="img-l-servicos" src="images/servicos-ar-condicionado-01.jpg" alt=""></li>
             </ul>
         </div>
     </section>

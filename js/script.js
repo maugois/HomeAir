@@ -1,19 +1,24 @@
-// top fixo
+let calcScrollValue = () => {
+    let scrollProgress = document.getElementById("top-scroll");
+        
+    let pos = document.documentElement.scrollTop;
+        
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        
+    let calcScrollValue = Math.round((pos * 100) / calcHeight);
 
-const nav = document.querySelector('area-cabecalho');
-
-const onScroll = (event) => {
-    const scrollPosition = event.target.scrollingElement.scrollTop;
-
-    if (scrollPosition > 10) {
-        if (!nav.classList.contains("scrolled-down")) {
-            nav.classList.add("scrolled-down");
-        }
+    if (pos > 100) {
+        scrollProgress.style.display = "grid";
     } else {
-        if (nav.classList.contains("scrolled-down")) {
-            nav.classList.remove("scrolled-down")
-        }
+        scrollProgress.style.display = "none";
     }
-}
+    
+    scrollProgress.addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
+    });
+};
 
-document.addEventListener("scroll", onScroll);
+window.onscroll = function() {
+    calcScrollValue();
+};
+window.onload = calcScrollValue;
