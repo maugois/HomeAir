@@ -2,7 +2,7 @@
 $dados = array(
     [
         "id" => 1,
-        "nome" => "",
+        "nome" => "aaa",
         "descricao" => "",
         "preco" => 1000.99,
         "image" => 'images/ar.png'

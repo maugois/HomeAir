@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Icons google -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <!-- Icons FontAwesome -->
+     <script src="https://kit.fontawesome.com/687b2e222f.js" crossorigin="anonymous"></script>
 	<!-- Link angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <!-- Link jQuery -->
@@ -46,7 +48,7 @@
         <div class="itens-missao">
             <img src="images/missao.png" alt="Missão">
 
-            <h3 class="area-title-n3">Visão</h3>
+            <h3 class="area-title-n3">Missão</h3>
 
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing <br> 
@@ -133,39 +135,41 @@
 
         <div id="arc">
             <ul ng-show="ar">
-                <li><a id="1" href="detalhes.php"><img src="images/ar2.png" alt=""></a></li>
-                <li><a id="2" href="detalhes.php"><img src="images/ar.png" alt=""></a></li>
-                <li><a id="3" href="detalhes.php"><img src="images/ar3.png" alt=""></a></li>
-                <li><a id="4" href="detalhes.php"><img src="images/ar4.png" alt=""></a></li>
-                <li><a id="5" href="detalhes.php"><img src="images/ar5.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=1"><img src="images/ar.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=2"><img src="images/ar2.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=3"><img src="images/ar3.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=4"><img src="images/ar4.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=5"><img src="images/ar5.png" alt=""></a></li>
             </ul>
 
             <ul ng-show="inver">
-                <li><a id="6" href="detalhes.php"><img src="images/inverter.png" alt=""></a></li>
-                <li><a id="7" href="detalhes.php"><img src="images/inverter2.png" alt=""></a></li>
-                <li><a id="8" href="detalhes.php"><img src="images/inverter3.png" alt=""></a></li>
-                <li><a id="9" href="detalhes.php"><img src="images/inverter4.png" alt=""></a></li>
-                <li><a id="10" href="detalhes.php"><img src="images/inverter5.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=6"><img src="images/inverter.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=7"><img src="images/inverter2.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=8"><img src="images/inverter3.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=9"><img src="images/inverter4.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=10"><img src="images/inverter5.png" alt=""></a></li>
             </ul>
 
             <ul ng-show="multi">
-                <li><a id="11" href="detalhes.php"><img src="images/multi-split.png" alt=""></a></li>
-                <li><a id="12" href="detalhes.php"><img src="images/multi-split2.png" alt=""></a></li>
-                <li><a id="13" href="detalhes.php"><img src="images/multi-split3.png" alt=""></a></li>
-                <li><a id="14" href="detalhes.php"><img src="images/multi-split4.png" alt=""></a></li>
-                <li><a id="15" href="detalhes.php"><img src="images/multi-split5.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=11"><img src="images/multi-split.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=12"><img src="images/multi-split2.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=13"><img src="images/multi-split3.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=14"><img src="images/multi-split4.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=15"><img src="images/multi-split5.png" alt=""></a></li>
             </ul>
 
             <ul ng-show="solar">
-                <li><a id="16" href="detalhes.php"><img src="images/solar.png" alt=""></a></li>
-                <li><a id="17" href="detalhes.php"><img src="images/solar2.png" alt=""></a></li>
-                <li><a id="18" href="detalhes.php"><img src="images/solar3.png" alt=""></a></li>
-                <li><a id="19" href="detalhes.php"><img src="images/solar4.png" alt=""></a></li>
-                <li><a id="20" href="detalhes.php"><img src="images/solar5.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=16"><img src="images/solar.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=17"><img src="images/solar2.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=18"><img src="images/solar3.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=19"><img src="images/solar4.png" alt=""></a></li>
+                <li><a href="detalhes.php?id=20"><img src="images/solar5.png" alt=""></a></li>
             </ul>
         </div>
     </section>
+
     <?php include 'rodape.html'?>
+    
     <script src="js/script.js"></script>
     <script>
         // Filtro produtos
