@@ -23,8 +23,8 @@
 }
 
 /* ########################### COMEÇO GERAL ########################### */
-body {
-    padding-top: 56px;
+html {
+    scroll-behavior: smooth;
 }
 
 .area-title-n2 {
@@ -45,6 +45,43 @@ body {
 body p, a, h3 {
     font-family: 'textos', sans-serif;
 }
+
+.main-topo {
+    display: flex;
+    margin: 40px 10%;
+    gap: 20px;
+    border-bottom: 1px solid #b6b1b1;
+    border-top: 1px solid #b6b1b1;
+    padding: 10px 0;
+}
+
+.main-topo a {
+    text-decoration: none;
+    color: #a09999;
+    transition: all 0.2s ease;
+    font-size: 0.9em;
+}
+
+.main-topo a:hover {
+    text-decoration: none;
+    color: #746e6e;
+}
+
+.main-topo a::after {
+    content: " ";
+    border-right: 1px solid #b6b1b1;
+    height: 60px;
+    padding-left: 20px;
+}
+
+.main-topo a i {
+    padding-right: 10px;
+}
+
+.main-topo p {
+    font-weight: bold;
+    font-size: 0.9em;
+}
 /* ########################### FIM GERAL ########################### */
 
 
@@ -54,6 +91,14 @@ body p, a, h3 {
     display: flex;
     width: 100%;
     height: 60px;
+    position: relative;
+    box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
+    background-color: var(--cor-cinza);
+}
+
+#area-cabecalho.fixo {
+    transition: 0.5s;
+    z-index: 999;
     position: fixed;
     top: 0;
     left: 0;
@@ -61,8 +106,7 @@ body p, a, h3 {
     -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.35);
     -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.35);
     box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.35);
-    background-color: var(--cor-cinza);
-    z-index: 999;
+    height: 50px;
 }
 /* Começo logo */
 #logo {

@@ -22,3 +22,13 @@ window.onscroll = function() {
     calcScrollValue();
 };
 window.onload = calcScrollValue;
+
+const header = document.getElementById('area-cabecalho');
+
+document.addEventListener('scroll', function () {
+    if (window.scrollY > 0 ) {
+        header.classList.add('fixo');
+    } else {
+        header.classList.remove('fixo');
+    }
+});
