@@ -31,28 +31,40 @@ $id = $_GET['id'];
 
 
     <section id="area-detalhes">
-        <?php foreach ($dados as $dado){?>    
-            
-            <h2><?php if ($dado['id']==$id) {echo $dado['nome']; ?></h2>
-
-            <div>
-                <div><img src="<?php echo $dado['image']; ?>" alt="" ></div>
+        <?php foreach ($dados as $dado){ if ($dado['id']==$id) {?>    
+            <div id="produtos">
+                <div id="img-geral">
+                    <img src="<?php echo $dado['image']; ?>" alt="" >
+                </div>
                 
-                <div>
-                    <div>
+
+                <div id="area-dados">
+                    <h2><?php echo $dado['nome']; ?></h2>
+            
+
+                    <p id="descricao">
+                        <?php echo mb_strimwidth($dado['descricao'],0,341,'<span>&nbsp;Ver mais...</span>');?>
+                    </p>
+
+                    <div id="dados-preco">
                         <h3>
-                            <?php echo ($dado['preco']);?> 
-                            <span><?php echo ($dado['preco']+500);?></span>
+                            R$<?php echo number_format(($dado['preco']),2,',','.');?> 
+                            <span class="sem-promo">R$<?php echo number_format(($dado['preco']+500),2,',','.');?></span>
                         </h3>
                         <p>
-                            até 5x de R$<?php echo ($dado['preco']/5);?> sem juros
+                            até <span class="promo">5x</span> de <span class="promo">R$<?php echo number_format(($dado['preco']/5),2,',','.');?></span> sem juros
                         </p>
                     </div>
+                    
+                    <span id="img-linha">
+                        <img src="images/linha.svg" alt="">
+                    </span>
 
-                    <button><i></i> Comprar</button>
+                    <div id="btn-compra">
+                        <button>Comprar</button>
+                    </div>
                 </div>
             </div>
-            
         <?php }}?>
     </section>
 

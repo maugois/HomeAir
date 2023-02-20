@@ -45,43 +45,6 @@ html {
 body p, a, h3 {
     font-family: 'textos', sans-serif;
 }
-
-.main-topo {
-    display: flex;
-    margin: 40px 10%;
-    gap: 20px;
-    border-bottom: 1px solid #b6b1b1;
-    border-top: 1px solid #b6b1b1;
-    padding: 10px 0;
-}
-
-.main-topo a {
-    text-decoration: none;
-    color: #a09999;
-    transition: all 0.2s ease;
-    font-size: 0.9em;
-}
-
-.main-topo a:hover {
-    text-decoration: none;
-    color: #746e6e;
-}
-
-.main-topo a::after {
-    content: " ";
-    border-right: 1px solid #b6b1b1;
-    height: 60px;
-    padding-left: 20px;
-}
-
-.main-topo a i {
-    padding-right: 10px;
-}
-
-.main-topo p {
-    font-weight: bold;
-    font-size: 0.9em;
-}
 /* ########################### FIM GERAL ########################### */
 
 
@@ -450,7 +413,7 @@ body p, a, h3 {
 }
 
 #endereco-contato h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 #endereco-contato p {
@@ -599,5 +562,146 @@ body p, a, h3 {
 
 
 /* ########################### COMEÇO DETALHES PRODUTOS ########################### */
+/* Começo geral */
+#area-detalhes {
+    width: 90%;
+    margin: 10px auto;
+    background-color: var(--cor-cinza);
+    border-radius: 10px;
+}
+/* Fim geral */
 
+/* Começo topo 'voltar' */
+.main-topo {
+    display: flex;
+    width: 90%;
+    margin: 40px auto;
+    gap: 20px;
+    border-bottom: 1px solid #b6b1b1;
+    border-top: 1px solid #b6b1b1;
+    padding: 10px 0;
+}
+
+.main-topo a {
+    text-decoration: none;
+    color: #a09999;
+    transition: all 0.2s ease;
+    font-size: 0.9em;
+}
+
+.main-topo a:hover {
+    text-decoration: none;
+    color: #746e6e;
+}
+
+.main-topo a::after {
+    content: " ";
+    border-right: 1px solid #b6b1b1;
+    height: 60px;
+    padding-left: 20px;
+}
+
+.main-topo a i {
+    padding-right: 10px;
+}
+
+.main-topo p {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+/* Começo topo 'voltar' */
+
+#produtos {
+    display: flex;
+}
+
+#img-geral {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+#area-dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#area-dados h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+#area-dados #descricao {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#area-dados #descricao span {
+    color: var(--cor-grafite);
+    cursor: pointer;
+}
+
+#area-dados #descricao span:hover {
+    color: var(--cor-cinza-escuro);
+}
+
+#area-dados #dados-preco {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+    margin-right: 27px;
+}
+
+#area-dados #dados-preco h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#area-dados #dados-preco .sem-promo {
+    text-decoration: line-through;
+}
+
+#area-dados #dados-preco p {
+    font-size: 0.9em;
+}
+
+#area-dados #dados-preco p .promo {
+    font-weight: bold;
+}
+
+#area-dados #img-linha {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+#area-dados #img-linha img {
+    width: 50%;
+}
+
+#area-dados #btn-compra {
+    display: flex;
+    justify-content: center;
+}
+
+#area-dados #btn-compra button {
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 1px;
+    font-weight: bolder;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+#area-dados #btn-compra button:hover {
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-branca);
+    border: none;
+}
 /* ########################### FIM DETALHES PRODUTOS ########################### */
