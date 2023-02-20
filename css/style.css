@@ -512,7 +512,7 @@ body p, a, h3 {
     font-style: italic;
 }
 
-#form-contato .button {
+.button {
     margin: 30px auto;
     width: 90px;
     height: 38px;
@@ -524,7 +524,7 @@ body p, a, h3 {
     transition: 0.1s ease-in;
 }
 
-#form-contato .button:hover {
+.button:hover {
     background-color: var(--cor-azul-escuro);
     border: var(--cor-azul-escuro) solid 1px;
     color: var(--cor-branca);
