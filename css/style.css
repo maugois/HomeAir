@@ -27,6 +27,14 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    cursor: url(../images/cursor-default.cur), default;
+}
+
+body a {
+    cursor: url(../images/cursor_pointer.cur), pointer;
+}
+
 .area-title-n2 {
     font-size: 2em;
     text-align: center;
@@ -341,7 +349,7 @@ body p, a, h3 {
 
 .filter-element {
     font-size: 1em;
-    cursor: pointer;
+    cursor: url(../images/cursor_pointer.cur), pointer;
     background-color: transparent;
     border: none;
     transition: 0.2s ease linear;
@@ -519,7 +527,7 @@ body p, a, h3 {
     background-color: transparent;
     border: var(--cor-preto) solid 1px;
     border-radius: 3px;
-    cursor: pointer;
+    cursor: url(../images/cursor_pointer.cur), pointer;
     font-weight: bold;
     transition: 0.1s ease-in;
 }
@@ -567,7 +575,7 @@ body p, a, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    cursor: url(../images/cursor_pointer.cur), pointer;
     transition: 0.2s ease-in;
 }
 
