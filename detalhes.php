@@ -41,9 +41,12 @@ $id = $_GET['id'];
                 <div id="area-dados">
                     <h2><?php echo $dado['nome']; ?></h2>
             
+                    <span id="img-linha">
+                        <img src="images/linha.svg" alt="">
+                    </span>
 
                     <p id="descricao">
-                        <?php echo mb_strimwidth($dado['descricao'],0,341,'<span>&nbsp;Ver mais...</span>');?>
+                        <?php echo mb_strimwidth($dado['descricao'],0,341,'<a href="#descricao-completa">&nbsp;Ver mais...</a>');?>
                     </p>
 
                     <div id="dados-preco">
@@ -55,16 +58,22 @@ $id = $_GET['id'];
                             até <span class="promo">5x</span> de <span class="promo">R$<?php echo number_format(($dado['preco']/5),2,',','.');?></span> sem juros
                         </p>
                     </div>
-                    
-                    <span id="img-linha">
-                        <img src="images/linha.svg" alt="">
-                    </span>
 
                     <div id="btn-compra">
                         <button>Comprar</button>
                     </div>
                 </div>
             </div>
+
+            <?php if (mb_strlen($dado['descricao']) > 341) {?>
+                <div id="descricao-completa">
+                    <h3>Informações do Produto</h3>
+
+                    <p>
+                        <?php echo ($dado['descricao']);?>
+                    </p>
+                </div>
+            <?php }?>
         <?php }}?>
     </section>
 

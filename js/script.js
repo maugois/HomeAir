@@ -1,3 +1,4 @@
+// Scorll top
 let calcScrollValue = () => {
     let scrollProgress = document.getElementById("top-scroll");
         
@@ -23,6 +24,7 @@ window.onscroll = function() {
 };
 window.onload = calcScrollValue;
 
+// Header fixo
 const header = document.getElementById('area-cabecalho');
 
 document.addEventListener('scroll', function () {
