@@ -20,7 +20,7 @@ $id = $_GET['id'];
     <!-- Link jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <title>Document</title>
-</head>
+</head> 
 <body>
     <?php include 'cabecalho.html'?>
 
@@ -42,7 +42,7 @@ $id = $_GET['id'];
                     <h2><?php echo $dado['nome']; ?></h2>
             
                     <span id="img-linha">
-                        <img src="images/linha.svg" alt="">
+                        <img src="images/linha-azul.svg" alt="">
                     </span>
 
                     <p id="descricao">
@@ -64,7 +64,7 @@ $id = $_GET['id'];
                     </div>
                 </div>
             </div>
-
+            <hr style="width: 80%;">
             <?php if (mb_strlen($dado['descricao']) > 341) {?>
                 <div id="descricao-completa">
                     <h3>Informações do Produto</h3>
