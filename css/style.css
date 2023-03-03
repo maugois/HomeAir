@@ -235,15 +235,21 @@ body p, a, h3 {
     margin-top: 15px;
 }
 
+.lista-servicos li p {
+    font-size: 1em;
+}
+
 .lista-servicos li .img-l-servicos {
-    width: 200px;
+    width: 193px;
     border-radius: 20px;
 }
 
 .lista-servicos li {
-    text-align: center;
-    width: 15%;
+    text-align: start;
+    width: 32%;
     margin: 2px;
+    display: flex;
+    gap: 10px;
 }
 /* ########################### FIM SERVIÇOS ########################### */
 
@@ -751,25 +757,22 @@ body p, a, h3 {
 
 
     /*---------------- SERVIÇOS COMEÇO -------------------*/
-    /* #area-servicos {
+    #area-servicos {
         height: 10%;
-    }
-
-    #itens-servicos {
-        flex-direction: unset;
+        padding-bottom: 30px;
     }
 
     .lista-servicos {
+        margin-top: 25px;
         flex-direction: column;
         align-items: center;
-        width: 40%;     
+        gap: 20px;
     }
 
     .lista-servicos li {
-        width: 50%;
-    } */
-
-    
+        text-align: center;
+        width: 45%;
+    }
     /*---------------- SERVIÇOS FIM -------------------*/
 
 
@@ -783,6 +786,15 @@ body p, a, h3 {
         height: 10%;
     }
     /*---------------- PRODUTOS FIM -------------------*/
+
+
+
+    
+    /*---------------- FOOTER COMEÇO -------------------*/
+    #top-scroll {
+        left: 91%;
+    }
+    /*---------------- FOOTER FIM -------------------*/
 }
 
 
@@ -796,44 +808,76 @@ body p, a, h3 {
 
 
     /*---------------- FOOTER COMEÇO -------------------*/
+    #imagem-contato {
+        display: none;
+    }
 
+    #rodape-area {
+        justify-content: center;
+    }
+
+    #area-contato {
+        width: 80%;
+    }
+
+    #top-scroll {
+        left: 91.5%;
+    }
     /*---------------- FOOTER FIM -------------------*/
 
 
 
     /*---------------- INICIAL COMEÇO -------------------*/
+    #area-inicial {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 
+    #inicial-img-solar {
+        display: none;
+    }
+
+    #inicial-text {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
     /*---------------- INICIAL FIM -------------------*/
 
 
 
-    /*---------------- MISSÃO COMEÇO -------------------*/
-
-    /*---------------- MISSÃO FIM -------------------*/
-
-
-
     /*---------------- SERVIÇOS COMEÇO -------------------*/
-
+    .lista-servicos li {
+        width: 55%;
+      }
     /*---------------- SERVIÇOS FIM -------------------*/
 
 
 
     /*---------------- SOBRE COMEÇO -------------------*/
+    #area-sobre {
+        justify-content: center;
+        height: 10%;
+        padding-bottom: 30px;
+    }
 
+    #img-sobre {
+        display: none;
+    }
+
+    #text-sobre {
+        width: 90%;
+    }
     /*---------------- SOBRE FIM -------------------*/
 
 
 
     /*---------------- PRODUTOS COMEÇO -------------------*/
-
+    #area-produtos {
+        padding-bottom: 30px;
+    }
     /*---------------- PRODUTOS FIM -------------------*/
-
-
-
-    /*---------------- CONTATO COMEÇO -------------------*/
-
-    /*---------------- CONTATO FIM -------------------*/
 }
 
 
