@@ -98,15 +98,15 @@
 
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <br> Ipsum iste corporis aperiam voluptates impedit ut amet, dolorem 
-                    <br> quo. Fugiat, blanditiis. Corrupti est aspernatur sed reprehenderit 
-                    <br> enim maiores laudantium recusandae neque. Lorem ipsum dolor sit amet 
-                    <br> consectetur adipisicing elit. Aliquid dignissimos nostrum voluptatibus 
-                    <br> consequatur porro non soluta, hic qui, accusamus similique incidunt 
-                    <br> quisquam iste minima, doloremque sequi odit sit officiis cum! Lorem 
-                    <br> ipsum dolor sit amet consectetur adipisicing elit. Officia itaque 
-                    <br> assumenda quaerat facilis accusamus corrupti aspernatur soluta 
-                    <br> molestiae in sit officiis saepe voluptate magnam, aut minima.
+                    Ipsum iste corporis aperiam voluptates impedit ut amet, dolorem 
+                    quo. Fugiat, blanditiis. Corrupti est aspernatur sed reprehenderit 
+                    enim maiores laudantium recusandae neque. Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Aliquid dignissimos nostrum voluptatibus 
+                    consequatur porro non soluta, hic qui, accusamus similique incidunt 
+                    quisquam iste minima, doloremque sequi odit sit officiis cum! Lorem 
+                    ipsum dolor sit amet consectetur adipisicing elit. Officia itaque 
+                    assumenda quaerat facilis accusamus corrupti aspernatur soluta 
+                    molestiae in sit officiis saepe voluptate magnam, aut minima.
                 </p>
             </div>
         </article>

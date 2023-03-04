@@ -29,6 +29,7 @@ html {
 
 body {
     cursor: url(../images/cursor-default.cur), default;
+    padding-top: 50px;
 }
 
 body a {
@@ -65,19 +66,20 @@ body p, a, h3 {
     position: relative;
     box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
     background-color: var(--cor-cinza);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
 }
 
 #area-cabecalho.fixo {
     transition: 0.5s;
     z-index: 999;
-    position: fixed;
-    top: 0;
-    left: 0;
     box-sizing: border-box;
     -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.35);
     -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.35);
     box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.35);
-    height: 50px;
+    height: 55px;   
 }
 /* Começo logo */
 #logo {
@@ -88,6 +90,19 @@ body p, a, h3 {
 /* Fim logo */
 
 /* Começo menu */
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: var(--cor-preto);
+    margin: 8px;
+    transition: 0.3s;
+}
+
 #menu {
     width: 50%;
     display: flex;
@@ -276,6 +291,7 @@ body p, a, h3 {
 #text-sobre div {
     text-align: center;
     margin-right: 85px;
+    width: 65%;
 }
 
 #text-sobre div p {
@@ -745,6 +761,14 @@ body p, a, h3 {
 
 /* ########################### COMEÇO RESPONSIVO ########################### */
 @media screen and (max-width: 1200px) {
+    /*---------------- HEADER COMEÇO -------------------*/
+    #menu nav ul li a {
+        font-size: 1.233em;
+    }
+    /*---------------- HEADER FIM -------------------*/
+
+
+
     /*---------------- MISSÃO COMEÇO -------------------*/
     #area-missao {
         height: 100%;
@@ -801,8 +825,75 @@ body p, a, h3 {
 
 
 @media screen and (max-width: 999px) {
-    /*---------------- HEADER COMEÇO -------------------*/
+    /*---------------- HEADER COMEÇO -------------------*/  
+    body {
+        overflow-x: hidden;
+    }
 
+    #menu {
+        justify-content: end;
+    }
+
+    #menu nav.ajuste {
+        top: 55px;
+        transition: 0.5s;
+    }
+
+    #menu nav {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        background: var(--cor-cinza);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        transition: 0.5s;
+    }
+
+    #menu nav ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #menu nav ul {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+        margin-right: 30px;
+    }
+      
+    #menu nav.active {
+    transform: translateX(0);
+    }
+      
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+      
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    
+    .mobile-menu.active .line2 {
+        opacity: 0;
+    }
+    
+    .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
     /*---------------- HEADER FIM -------------------*/
 
 
@@ -843,6 +934,10 @@ body p, a, h3 {
         align-items: center;
         justify-content: center;
     }
+
+    #inicial-text p {
+        margin-left: unset;
+    }
     /*---------------- INICIAL FIM -------------------*/
 
 
@@ -857,17 +952,24 @@ body p, a, h3 {
 
     /*---------------- SOBRE COMEÇO -------------------*/
     #area-sobre {
-        justify-content: center;
         height: 10%;
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
         padding-bottom: 30px;
     }
 
-    #img-sobre {
-        display: none;
+    #text-sobre div {
+        margin-right:  unset;
+        width: 100%;
     }
 
     #text-sobre {
-        width: 90%;
+        width: 70%;
+    }
+
+    #img-sobre {
+        width: 70%;
     }
     /*---------------- SOBRE FIM -------------------*/
 
@@ -878,107 +980,196 @@ body p, a, h3 {
         padding-bottom: 30px;
     }
     /*---------------- PRODUTOS FIM -------------------*/
+
+
+
+
+    /*---------------- DETALHES COMEÇO -------------------*/
+    #produtos {
+        flex-direction: column;
+    }
+    /*---------------- DETALHES FIM -------------------*/
 }
 
 
 
 
 @media screen and (max-width: 799px) {
-    /*---------------- HEADER COMEÇO -------------------*/
-
-    /*---------------- HEADER FIM -------------------*/
-
-
-
     /*---------------- FOOTER COMEÇO -------------------*/
+    #top-scroll {
+        left: 89%;
+        width: 50px;
+        height: 50px;
+    }
 
+    #redes-sociais {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
     /*---------------- FOOTER FIM -------------------*/
 
 
 
     /*---------------- INICIAL COMEÇO -------------------*/
-
+    #inicial-text {
+        width: 100%;
+    }
     /*---------------- INICIAL FIM -------------------*/
 
 
 
-    /*---------------- MISSÃO COMEÇO -------------------*/
 
+    /*---------------- MISSÃO COMEÇO -------------------*/
+    .itens-missao p {
+        font-size: 0.95em;
+    }
     /*---------------- MISSÃO FIM -------------------*/
 
 
 
-    /*---------------- SERVIÇOS COMEÇO -------------------*/
 
+    /*---------------- SERVIÇOS COMEÇO -------------------*/
+    .lista-servicos li {
+        width: 90%;
+    }
     /*---------------- SERVIÇOS FIM -------------------*/
 
 
 
-    /*---------------- SOBRE COMEÇO -------------------*/
 
+    /*---------------- SOBRE COMEÇO -------------------*/
+    #text-sobre {
+        width: 95%;
+    }
+
+    #text-sobre div p {
+        font-size: 0.86em;
+    }
     /*---------------- SOBRE FIM -------------------*/
 
 
 
-    /*---------------- PRODUTOS COMEÇO -------------------*/
 
+    /*---------------- PRODUTOS COMEÇO -------------------*/
+    .filter-element {
+        font-size: 0.78em;
+    }
+
+    #arc ul li a img {
+        width: 140px;
+    }
     /*---------------- PRODUTOS FIM -------------------*/
 
 
 
-    /*---------------- CONTATO COMEÇO -------------------*/
 
-    /*---------------- CONTATO FIM -------------------*/
+    /*---------------- DETALHES COMEÇO -------------------*/
+    #img-geral img {
+        width: 100%;
+    }
+
+    #area-dados h2 {
+        font-size: 1.3em;
+    }
+    /*---------------- DETALHES FIM -------------------*/
 }
 
 
 
 
 @media screen and (max-width: 450px) {
-    /*---------------- HEADER COMEÇO -------------------*/
-
-    /*---------------- HEADER FIM -------------------*/
-
-
-
     /*---------------- FOOTER COMEÇO -------------------*/
+    #rodape-area {
+        height: 10%;
+        padding-bottom: 10px;
+    }
 
+    #title-contato img {
+        width: 100px;
+    }
+
+    #endereco-contato h3 {
+        font-size: 0.846em;
+    }
+
+    #endereco-contato h3 i {
+        font-size: 12px;
+    }
+
+    #endereco-contato p {
+        margin-top: 15px;
+        font-size: 0.7em;
+    }
+
+    #form-contato h3 {
+        font-size: 1.2em;
+    }
+
+    #top-scroll {
+        left: 80%;
+
+    }
+
+    #copyright p {
+        font-size: 0.65em;
+    }
     /*---------------- FOOTER FIM -------------------*/
 
 
 
     /*---------------- INICIAL COMEÇO -------------------*/
+    #inicial-text p {
+        font-size: 1.4em;
+    }
 
+    #inicial-text p img {
+        width: 250px;
+    }
     /*---------------- INICIAL FIM -------------------*/
 
 
 
     /*---------------- MISSÃO COMEÇO -------------------*/
+    .itens-missao img {
+        width: 80px;
+    }
 
+    .itens-missao p {
+        font-size: 0.69em;
+    }
     /*---------------- MISSÃO FIM -------------------*/
 
 
 
     /*---------------- SERVIÇOS COMEÇO -------------------*/
+    .lista-servicos li {
+        width: 90%;
+    }
 
+    .lista-servicos li p {
+        font-size: 0.65em;
+    }
+
+    .lista-servicos li .img-l-servicos {
+        width: 120px;
+    }
     /*---------------- SERVIÇOS FIM -------------------*/
 
 
 
     /*---------------- SOBRE COMEÇO -------------------*/
-
+    #text-sobre div p {
+        font-size: 1em;
+    }
     /*---------------- SOBRE FIM -------------------*/
 
 
 
     /*---------------- PRODUTOS COMEÇO -------------------*/
-
+    .filter-element {
+        font-size: 0.7em;
+    }
     /*---------------- PRODUTOS FIM -------------------*/
-
-
-
-    /*---------------- CONTATO COMEÇO -------------------*/
-
-    /*---------------- CONTATO FIM -------------------*/
 }
 /* ########################### COMEÇO RESPONSIVO ########################### */
