@@ -657,6 +657,7 @@ body p, a, h3 {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+    padding-bottom: 20px;
 }
 
 #area-dados h2 {
