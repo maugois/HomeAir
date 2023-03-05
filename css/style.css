@@ -30,6 +30,7 @@ html {
 body {
     cursor: url(../images/cursor-default.cur), default;
     padding-top: 50px;
+    overflow-x: hidden;
 }
 
 body a {
@@ -92,7 +93,7 @@ body p, a, h3 {
 /* Começo menu */
 .mobile-menu {
     display: none;
-    cursor: pointer;
+    cursor: url(../images/cursor_pointer.cur), pointer;
 }
 
 .mobile-menu div {
@@ -726,7 +727,7 @@ body p, a, h3 {
     width: 200px;
     height: 40px;
     border-radius: 5px;
-    border-width: 1px;
+    border: solid 1px;
     font-weight: bolder;
     background-color: transparent;
     transition: 0.5s;
@@ -869,6 +870,9 @@ body p, a, h3 {
       
     #menu nav.active {
     transform: translateX(0);
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.35);
     }
       
     @keyframes navLinkFade {
