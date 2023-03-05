@@ -64,8 +64,8 @@ $id = $_GET['id'];
                     </div>
                 </div>
             </div>
-            <hr style="width: 80%;">
             <?php if (mb_strlen($dado['descricao']) > 341) {?>
+                <hr style="width: 80%;">
                 <div id="descricao-completa">
                     <h3>Informações do Produto</h3>
 
