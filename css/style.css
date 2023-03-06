@@ -89,7 +89,7 @@ body p, a, h3 {
     justify-content: start;
 }
 
-#logo img {
+#logo a img {
     margin-left: 40px;
     height: 98%;
 }
