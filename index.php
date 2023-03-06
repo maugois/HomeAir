@@ -112,7 +112,7 @@
         </article>
         
         <article id="img-sobre">
-            <img src="" alt="Logo grande">
+            <img src="images/LOGO_GRANDE.png" alt="Logo grande">
         </article>
     </section>
 

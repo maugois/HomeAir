@@ -88,6 +88,11 @@ body p, a, h3 {
     display: flex;
     justify-content: start;
 }
+
+#logo img {
+    margin-left: 40px;
+    height: 98%;
+}
 /* Fim logo */
 
 /* Começo menu */
