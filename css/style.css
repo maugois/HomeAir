@@ -258,6 +258,8 @@ body p, a, h3 {
 
 .lista-servicos li p {
     font-size: 1em;
+    text-align: center;
+    line-height: 17px;
 }
 
 .lista-servicos li .img-l-servicos {
@@ -267,7 +269,7 @@ body p, a, h3 {
 
 .lista-servicos li {
     text-align: start;
-    width: 32%;
+    width: 27%;
     margin: 2px;
     display: flex;
     gap: 10px;
@@ -767,6 +769,27 @@ body p, a, h3 {
 
 
 /* ########################### COMEÇO RESPONSIVO ########################### */
+@media screen and (max-width: 1500px) {
+    /*---------------- SERVIÇOS COMEÇO -------------------*/
+    #area-servicos {
+        height: 10%;
+        padding-bottom: 30px;
+    }
+
+    .lista-servicos {
+        margin-top: 25px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .lista-servicos li {
+        text-align: center;
+        width: 45%;
+    }
+    /*---------------- SERVIÇOS FIM -------------------*/
+}
+
 @media screen and (max-width: 1200px) {
     /*---------------- HEADER COMEÇO -------------------*/
     #menu nav ul li a {
