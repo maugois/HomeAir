@@ -810,26 +810,6 @@ body p, a, h3 {
 
 
 
-    /*---------------- SERVIÇOS COMEÇO -------------------*/
-    #area-servicos {
-        height: 10%;
-        padding-bottom: 30px;
-    }
-
-    .lista-servicos {
-        margin-top: 25px;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .lista-servicos li {
-        text-align: center;
-        width: 45%;
-    }
-    /*---------------- SERVIÇOS FIM -------------------*/
-
-
 
     /*---------------- PRODUTOS COMEÇO -------------------*/
     #arc ul {
@@ -849,6 +829,15 @@ body p, a, h3 {
         left: 91%;
     }
     /*---------------- FOOTER FIM -------------------*/
+
+
+
+    
+    /*---------------- DETALHES COMEÇO -------------------*/
+    #produtos {
+        flex-direction: column;
+    }
+    /*---------------- DETALHES FIM -------------------*/
 }
 
 
@@ -1013,15 +1002,6 @@ body p, a, h3 {
         padding-bottom: 30px;
     }
     /*---------------- PRODUTOS FIM -------------------*/
-
-
-
-
-    /*---------------- DETALHES COMEÇO -------------------*/
-    #produtos {
-        flex-direction: column;
-    }
-    /*---------------- DETALHES FIM -------------------*/
 }
 
 
