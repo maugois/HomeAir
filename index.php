@@ -20,7 +20,7 @@
 <body ng-app="meuSite" ng-controller="meuControle">
     <?php include 'cabecalho.html'?>
 
-    <section id="area-inicial">
+    <section id="area-inicial" class="area-espacamento">
         <div id="inicial-img-solar">
             <img src="images/energia_solar_alt.png" alt="Imagem energia solar">
         </div>
@@ -73,7 +73,7 @@
     </section>
 
 
-    <section id="area-servicos">
+    <section id="area-servicos" class="area-espacamento">
         <h2 class="area-title-n2">Serviços<img src="images/linha.svg" alt=""></h2>
 
         <div id="itens-servicos">
@@ -92,7 +92,7 @@
     </section>
 
     
-    <section id="area-sobre">
+    <section id="area-sobre" class="area-espacamento">
         <article id="text-sobre">
             <div>
                 <h2 class="area-title-n2">Sobre nós<img src="images/linha.svg" alt=""></h2>
@@ -118,7 +118,7 @@
     </section>
 
 
-    <section id="area-produtos">
+    <section id="area-produtos" class="area-espacamento">
         <h2 class="area-title-n2">Produtos<img src="images/linha.svg" alt=""></h2>
         
         <div id="filter-arc">

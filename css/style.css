@@ -55,6 +55,10 @@ body a {
 body p, a, h3 {
     font-family: 'textos', sans-serif;
 }
+
+.area-espacamento {
+    padding-top: 30px;
+}
 /* ########################### FIM GERAL ########################### */
 
 
