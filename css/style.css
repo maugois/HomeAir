@@ -832,7 +832,7 @@ body p, a, h3 {
 
 
 
-    
+
     /*---------------- DETALHES COMEÇO -------------------*/
     #produtos {
         flex-direction: column;
@@ -854,13 +854,13 @@ body p, a, h3 {
     }
 
     #menu nav.ajuste {
-        top: 55px;
+        top: 53px;
         transition: 0.5s;
     }
 
     #menu nav {
         position: absolute;
-        top: 60px;
+        top: 58px;
         right: 0;
         width: 50vw;
         height: 100vh;
